@@ -8,7 +8,7 @@ main {
   background: black;
   font-family: cursive;
   height: 80vh;
-  width: 80vw;
+  /* width: 80vw; */
 }
 header {
   background: chartreuse;
@@ -81,7 +81,9 @@ header {
 }
 
 .container {
-  margin: auto;
+  /* margin: auto; */
+  max-width: 100%;
+  /* padding: 0; */
 }
 .image {
   width: auto;
@@ -117,5 +119,26 @@ header {
   }
   .webCam {
     width: 100%;
+  }
+  .formStyle input {
+    width: 80%;
+  }
+  .container {
+    width: 100%;
+  }
+  .queryForm {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .formStyle input {
+    width: 50%;
+  }
+  .container {
+    width: 100%;
+  }
+  .queryForm {
+    margin: 0;
   }
 }

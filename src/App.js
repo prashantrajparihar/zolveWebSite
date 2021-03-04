@@ -21,6 +21,7 @@ function App() {
             <Switch>
               <Route path="/thirdPartyApi" component={ThirdPartyApi} />
               <Route
+                exact
                 path="/copyToClipboard"
                 component={CopyToClipboardComponent}
               />
@@ -40,3 +41,5 @@ export default App;
 // https://www.youtube.com/watch?v=Ly-9VTXJlnA&ab_channel=TraversyMedia
 // https://www.youtube.com/watch?v=mlSKLmG80Us&ab_channel=Arslan
 // https://www.youtube.com/watch?v=ffoTnHYia18&feature=emb_imp_woyt&ab_channel=FrontendCharts
+
+// https://stackoverflow.com/questions/64557078/how-to-set-dynamic-route-with-query-params-in-react-router-dom

@@ -5,19 +5,31 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const CopyToClipboardComponent = (props) => {
   let queries = queryString.parse(props.location.search);
+  console.log(queries.q);
   const [text1, setText1] = useState(queries.q);
+  const [text2, setText2] = useState(queries.q);
 
   const handleInputChange = (e) => {
     console.log(e.target.value);
     setText1(e.target.value);
     copy(text1);
   };
+  const changeQHandler = (e) => {
+    // setText2(e.target.value);
+    // queries.q = text2;
+  };
 
   return (
-    <CopyToClipboard text={text1}>
+    <CopyToClipboard text={(text1, text2)}>
       <div className="container">
         <div>
-          <h3>The initial value copied on clipboard is : {text1}</h3>
+          <input
+            type="text"
+            value={text2}
+            placeholder="Enter URL params with key name ‘q’ (url/?q=ABC"
+            onChange={changeQHandler}
+          ></input>
+          <h3>TextArea</h3>
         </div>
         <div className="txt">
           <textarea

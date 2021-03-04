@@ -42,7 +42,7 @@ const BarChart = ({ value }) => {
               text: "Coding Language Stats",
               fontSize: 25,
             },
-            legend: { display: true, position: "right" },
+            legend: { display: false, position: "right" },
           }}
         />
       </div>

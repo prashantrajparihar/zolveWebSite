@@ -10,7 +10,9 @@ const Header = () => {
           <nav className="my-2 my-md-2 mr-md-3">
             <NavLink
               className="p-2 "
-              to="/home"
+              to={{
+                pathname: "/home",
+              }}
               activeStyle={{ color: "red" }}
               activeClassName="selected"
               exact
@@ -30,7 +32,10 @@ const Header = () => {
             -
             <NavLink
               className="p-2 "
-              to="/copyToClipboard"
+              to={{
+                pathname: "/copyToClipboard",
+                search: "?q=ABS",
+              }}
               activeStyle={{ color: "red" }}
               activeClassName="selected"
               exact

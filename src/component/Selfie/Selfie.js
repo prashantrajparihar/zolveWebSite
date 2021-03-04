@@ -22,7 +22,8 @@ const Selfie = (props) => {
     setEditnigMode(false);
   };
 
-  console.log(props);
+  console.log("window ", window.innerWidth);
+  let width;
   return (
     <>
       <div className="selfieHeader">
@@ -37,13 +38,22 @@ const Selfie = (props) => {
                 ref={webcamRef}
                 screenshotFormat="image/jpeg"
                 imageSmoothing={true}
-                width={480}
+                forceScreenshotSourceSize="true"
+                width={window.innerWidth > 620 ? 620 : window.innerWidth - 50}
               />
             </div>
             {imgSrc && (
               <div>
                 <div className="webCam">
-                  <img src={imgSrc} alt="" className="image" />
+                  {/* {width  = {620>window.innerWidth?"620":window.innerWidth - 50}} */}
+                  <img
+                    src={imgSrc}
+                    alt=""
+                    style={{
+                      width:
+                        window.innerWidth > 620 ? 620 : window.innerWidth - 50,
+                    }}
+                  />
                 </div>
               </div>
             )}
