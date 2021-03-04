@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background: black;
+  font-family: cursive;
+  height: 80vh;
+  width: 80vw;
+}
+header {
+  background: chartreuse;
+}
+
+.glow {
+  font-family: cursive;
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  margin: 1.5rem;
+  padding-top: 8rem;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+.queryForm {
+  border: 1px solid #999;
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 1.5rem #aaa;
+  width: 100%;
+}
+
+.formStyle {
+  background: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem #aaa;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.submit {
+  grid-column: 1 / span 2;
+}
+.headingForBarQuery {
+  text-align: center;
+}
+
+.selfieDiv {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: auto;
+
+  justify-content: space-between;
+}
+.webCam {
+  padding: 1rem;
+  box-shadow: 0.15rem 0.15rem 0.25rem #aaa;
+  margin-right: 0.2rem;
+}
+
+.container {
+  margin: auto;
+}
+.image {
+  width: auto;
+}
+.selfieDiv {
+  display: flex;
+}
+.selfieHeader h1 {
+  color: #fff;
+  font-family: cursive;
+  text-shadow: 0.1rem 0.1rem 0.5rem red;
+}
+.croppedImage {
+  display: flex;
+  justify-content: space-between;
+}
+.webCamCrop {
+  height: 100%;
+  /* width: 100%; */
+  padding: 1rem;
+  box-shadow: 0.15rem 0.15rem 0.25rem #aaa;
+  margin-right: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .selfieDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .croppedImage {
+    display: flex;
+    flex-direction: column;
+  }
+  .webCam {
+    width: 100%;
+  }
+}
