@@ -23,7 +23,7 @@ const Selfie = (props) => {
   };
 
   console.log("window ", window.innerWidth);
-  let width;
+
   return (
     <>
       <div className="selfieHeader">

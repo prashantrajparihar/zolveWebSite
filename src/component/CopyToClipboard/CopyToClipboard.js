@@ -15,7 +15,7 @@ const CopyToClipboardComponent = (props) => {
     copy(text1);
   };
   const changeQHandler = (e) => {
-    // setText2(e.target.value);
+    setText2(text2);
     // queries.q = text2;
   };
 
