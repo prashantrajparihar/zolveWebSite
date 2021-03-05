@@ -15,7 +15,8 @@ ReactJS.
 
 #### 2. CopyToClipboard -
 
-1.  Default query string(defined earlier) of URL will be copied as we enter the page and will be displayed in input Box. Ex: https://gifted-mccarthy-40cbaa.netlify.app/copyToClipboard?q=ABS - will display ABC.
+1.  Default query string(defined earlier) of URL will be displayed in input Box, will be copied, when we click anywhere in div box containing textbox and text area.
+    Ex: https://gifted-mccarthy-40cbaa.netlify.app/copyToClipboard?q=ABS - will display ABC.
 2.  A TextArea - All the content will be copied as we type in the Text area.
 
 #### 3. Selfie -
