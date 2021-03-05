@@ -34,10 +34,7 @@ export const fetchlanguage = (str) => {
         "https://api.stackexchange.com/2.2/tags?pagesize=30&order=desc&sort=popular&site=stackoverflow"
       )
       .then((response) => {
-        console.log("response", response);
-        console.log("string", str);
         const languages = response.data;
-
         dispatch(fetchThirdPartyApiSuccess(languages));
       })
       .catch((err) => {

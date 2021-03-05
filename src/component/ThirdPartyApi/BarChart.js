@@ -2,7 +2,6 @@ import { Bar } from "react-chartjs-2";
 import "../../styles/styles.css";
 
 const BarChart = ({ value }) => {
-  console.log("value".value);
   let codingLanguages = [];
   let coderCount = [];
   let barColor = [];
@@ -18,9 +17,6 @@ const BarChart = ({ value }) => {
       `rgba(${randomColorValue()},${randomColorValue()},${randomColorValue()}, 0.8)`
     );
   });
-  console.log("codingLanguages", codingLanguages);
-  console.log("coderCount", coderCount);
-  console.log("barColor", barColor);
 
   return (
     <>

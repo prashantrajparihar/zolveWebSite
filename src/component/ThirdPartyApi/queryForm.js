@@ -20,7 +20,6 @@ class QueryForm extends Component {
     this.handleFromDate = this.handleFromDate.bind(this);
     this.handleToDate = this.handleToDate.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.fetchapi = this.fetchapi.bind(this);
   }
   handlePage(event) {
     this.setState({ page: event.target.value });
@@ -29,11 +28,9 @@ class QueryForm extends Component {
     this.setState({ pageSize: event.target.value });
   }
   handleFromDate(event) {
-    console.log(new Date(event.target.value));
     this.setState({ displayFromDate: event.target.value });
     const date = new Date(event.target.value);
     const dateUTC = (strDate) => Date.parse(strDate) / 1000;
-    console.log(dateUTC(date));
     this.setState({ fromDate: dateUTC(date) });
   }
   handleToDate(event) {
@@ -56,9 +53,7 @@ class QueryForm extends Component {
     });
 
     axios.get(str).then((res) => {
-      console.log(res.data.items);
       this.setState({ value: res.data.items });
-      console.log(this.state);
     });
     event.preventDefault();
   }
@@ -115,8 +110,6 @@ class QueryForm extends Component {
               </div>
             </div>
           </form>
-
-          {console.log("||||||||||||||||", this.state.value)}
           {this.state.value.length ? (
             <BarChart value={this.state.value} />
           ) : (

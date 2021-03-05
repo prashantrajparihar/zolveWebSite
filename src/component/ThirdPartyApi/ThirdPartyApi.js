@@ -8,14 +8,12 @@ const ThirdPartyApi = ({ languages, fetchlanguage }) => {
   useEffect(() => {
     fetchlanguage("abc");
   }, [fetchlanguage]);
-  console.log("rnm---> ", languages.languages.languages.items);
-
   return (
     <>
-      <div className="container">
+      <div className="graphContainer">
         <BarChart value={languages.languages.languages.items} />
-        <QueryForm />
       </div>
+      <QueryForm />
     </>
   );
 };

@@ -8,12 +8,15 @@ main {
   background: black;
   font-family: cursive;
   height: 80vh;
-  /* width: 80vw; */
 }
 header {
   background: chartreuse;
 }
+.container {
+  max-width: 95%;
+}
 
+/* For Home Styling */
 .glow {
   font-family: cursive;
   font-size: 3rem;
@@ -36,13 +39,18 @@ header {
   }
 }
 
+/* Third Party Api Styling */
+.graphContainer {
+  border-radius: 1rem;
+  border: 1px solid #999;
+  box-shadow: 1rem 1rem 1.5rem #aaa;
+  margin-bottom: 2rem;
+}
 .queryForm {
   border: 1px solid #999;
-  margin: 2rem;
   padding: 1rem;
   border-radius: 1rem;
   box-shadow: 1rem 1rem 1.5rem #aaa;
-  width: 100%;
 }
 
 .formStyle {
@@ -62,10 +70,49 @@ header {
 .submit {
   grid-column: 1 / span 2;
 }
+
 .headingForBarQuery {
   text-align: center;
 }
+.chart {
+  padding: 1rem;
+}
 
+/* ClipBoard Styling */
+.containerClipBoard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #aaa;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 0.5rem #aaa;
+  padding: 2rem;
+}
+.querybox input {
+  width: 90%;
+  height: 2rem;
+  outline: none;
+  border: 1px solid orange;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+.querybox input:focus {
+  border: 1px solid lightskyblue;
+  border-radius: 1rem;
+}
+.textarea textarea {
+  width: 90%;
+  height: 10rem;
+  outline: none;
+  border: 1px solid orange;
+  border-radius: 1rem;
+}
+.textarea textarea:focus {
+  border: 1px solid lightskyblue;
+  border-radius: 1rem;
+}
+
+/* Selfie Styling */
 .selfieDiv {
   display: flex;
   width: 100%;
@@ -80,16 +127,16 @@ header {
   margin-right: 0.2rem;
 }
 
-.container {
-  /* margin: auto; */
-  max-width: 100%;
-  /* padding: 0; */
-}
 .image {
   width: auto;
 }
 .selfieDiv {
   display: flex;
+}
+.selfieHeader {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .selfieHeader h1 {
   color: #fff;
@@ -102,7 +149,6 @@ header {
 }
 .webCamCrop {
   height: 100%;
-  /* width: 100%; */
   padding: 1rem;
   box-shadow: 0.15rem 0.15rem 0.25rem #aaa;
   margin-right: 0.2rem;
@@ -117,28 +163,16 @@ header {
     display: flex;
     flex-direction: column;
   }
-  .webCam {
-    width: 100%;
-  }
+
   .formStyle input {
     width: 80%;
   }
-  .container {
-    width: 100%;
-  }
-  .queryForm {
-    margin: 0;
-  }
-}
 
-@media (max-width: 768px) {
-  .formStyle input {
-    width: 50%;
-  }
-  .container {
-    width: 100%;
-  }
   .queryForm {
     margin: 0;
+  }
+  .webCam {
+    padding: 1rem;
+    box-shadow: 0 0;
   }
 }
