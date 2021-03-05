@@ -21,13 +21,11 @@ function App() {
             <Switch>
               <Route path="/thirdPartyApi" component={ThirdPartyApi} />
               <Route
-                exact
                 path="/copyToClipboard"
                 component={CopyToClipboardComponent}
               />
               <Route path="/selfie" exact component={Selfie} />
               <Route path="/" component={Home} />
-              <Route render={() => <h3>OOPS Page Not Found</h3>} />
             </Switch>
           </div>
         </BrowserRouter>

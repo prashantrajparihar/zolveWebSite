@@ -36,7 +36,7 @@ const Selfie = () => {
               screenshotFormat="image/jpeg"
               imageSmoothing={true}
               forceScreenshotSourceSize="true"
-              width={window.innerWidth > 620 ? 620 : window.innerWidth}
+              width={window.innerWidth > 620 ? 620 : 400}
             />
           </div>
           {!editnigMode && imgSrc && (
@@ -45,7 +45,7 @@ const Selfie = () => {
                 src={imgSrc}
                 alt=""
                 style={{
-                  width: window.innerWidth > 620 ? 620 : window.innerWidth,
+                  width: window.innerWidth > 620 ? 620 : 400,
                 }}
               />
             </div>
@@ -58,3 +58,4 @@ const Selfie = () => {
 };
 
 export default Selfie;
+// window.innerWidth
