@@ -64,10 +64,11 @@ class QueryForm extends Component {
         <div className="queryForm">
           <form onSubmit={this.handleSubmit}>
             <div className="formStyle">
-              <div className="pagex">
+              <div>
                 <label>
                   Page:<br></br>
                   <input
+                    className="pagex"
                     type="text"
                     value={this.state.page}
                     onChange={this.handlePage}
