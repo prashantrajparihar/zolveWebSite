@@ -4,9 +4,7 @@
 
 ## URL for Code Base on Git " https://github.com/prashantrajparihar/zolveWebSite "
 
-### Created a HomePage + 3 Page website, with links to all the pages accessible from the header, in
-
-ReactJS.
+### Created a HomePage + 3 Page website, with links to all the pages accessible from the header, in ReactJS.
 
 #### 1. ThirdPartyApi -
 
