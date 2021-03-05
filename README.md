@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Zolve Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## URL For running the project " https://gifted-mccarthy-40cbaa.netlify.app/ "
 
-## Available Scripts
+## URL for Code Base on Git " https://github.com/prashantrajparihar/zolveWebSite "
 
-In the project directory, you can run:
+### Created a HomePage + 3 Page website, with links to all the pages accessible from the header, in
 
-### `npm start`
+ReactJS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### 1. ThirdPartyApi -
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1.  I have used Redux for fetching URL (https://api.stackexchange.com/2.2/tags?pagesize=30&order=desc&sort=popular&site=stackoverflow).
+2.  And For Addition Feature, i have changed URL according to requirment of query and fetched data accordingly and displayed it on DOM.
 
-### `npm test`
+#### 2. CopyToClipboard -
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  Default query string(defined earlier) of URL will be copied as we enter the page and will be displayed in input Box. Ex: https://gifted-mccarthy-40cbaa.netlify.app/copyToClipboard?q=ABS - will display ABC.
+2.  A TextArea - All the content will be copied as we type in the Text area.
 
-### `npm run build`
+#### 3. Selfie -
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1.  Permission will be required by user to open camera.
+2.  Front Cam will open and clicking on "Click A Selfie" will click a selfie.
+3.  To edit the Selfie, click on "Edit".
+4.  There, for editing we can drag the cropping box to crop the image.
+5.  To Go Back to web camera press "Go Back".
